@@ -98,7 +98,7 @@ const Proof = () => {
         </h1>
         <Image src={'/mrplankton.png'} alt='mr plankton' width={150} height={150} className='absolute -top-1 -left-18'/>
         <p className="text-lg text-gray-700">
-          Turns out the secret isn't only the recipe — it's a skill issue too.
+          Turns out the secret isn&apos;t only the recipe — it&apos;s a skill issue too.
         </p>
 
         {/* Info Cards */}

@@ -28,17 +28,18 @@ const Hero = () => {
     const bubbles = container?.children;
 
     if (bubbles) {
-      Array.from(bubbles).forEach((bubble: any) => {
+      Array.from(bubbles).forEach((bubble) => {
+        const el = bubble as HTMLElement;
         const duration = gsap.utils.random(8, 30);
         const delay = gsap.utils.random(0, 5);
         const size = gsap.utils.random(15, 60);
 
-        bubble.style.width = `${size}px`;
-        bubble.style.height = `${size}px`;
-        bubble.style.left = `${gsap.utils.random(0, 100)}%`;
+        el.style.width = `${size}px`;
+        el.style.height = `${size}px`;
+        el.style.left = `${gsap.utils.random(0, 100)}%`;
 
         gsap.fromTo(
-          bubble,
+          el,
           {
             y: '100%',
             opacity: 0.6,

@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { FaHome, FaSearch, FaStar, FaUser } from 'react-icons/fa';
+import { IconType } from 'react-icons';
 
 const BottomBar = () => {
   const barRef = useRef<HTMLDivElement>(null);
@@ -31,7 +32,7 @@ const BottomBar = () => {
   );
 };
 
-const NavButton = ({ Icon, label }: { Icon: any; label: string }) => {
+const NavButton = ({ Icon, label }: { Icon: IconType; label: string }) => {
   return (
     <button
       className="flex flex-col items-center text-yellow-300 hover:text-pink-300 
