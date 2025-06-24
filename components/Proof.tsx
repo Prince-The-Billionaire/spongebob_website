@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { FaUserFriends, FaStar, FaFireAlt } from 'react-icons/fa';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { IconType } from 'react-icons';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -155,7 +156,7 @@ const Card = ({
   title,
   description,
 }: {
-  Icon: any;
+  Icon: IconType;
   title: string;
   description: string;
 }) => {
